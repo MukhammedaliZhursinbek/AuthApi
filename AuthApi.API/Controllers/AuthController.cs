@@ -1,3 +1,5 @@
+using AuthApi.Core.DTOs;
+using AuthApi.Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuthApi.API.Controllers 
@@ -7,15 +9,16 @@ namespace AuthApi.API.Controllers
 
     public class AuthController : ControllerBase
     {
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginRequest request)
+        private readonly IAuthService _authService;
+        public AuthController(IAuthService authService)
         {
-            return Ok("Login endpoint");
+            _authService = authService;
         }
-    }
-    public class LoginRequest
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequestDTO request)
+        {
+            var token = await _authService.LoginAsync(request);
+            return Ok(new {token});
+        }
     }
 }

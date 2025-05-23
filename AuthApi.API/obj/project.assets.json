@@ -33,6 +33,43 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "AuthApi.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "AuthApi.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AuthApi.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AuthApi.Application.dll": {}
+        }
+      },
+      "AuthApi.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/AuthApi.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AuthApi.Core.dll": {}
+        }
+      },
+      "AuthApi.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "AuthApi.Application": "1.0.0",
+          "AuthApi.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AuthApi.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AuthApi.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -67,10 +104,28 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "AuthApi.Application/1.0.0": {
+      "type": "project",
+      "path": "../AuthApi.Application/AuthApi.Application.csproj",
+      "msbuildProject": "../AuthApi.Application/AuthApi.Application.csproj"
+    },
+    "AuthApi.Core/1.0.0": {
+      "type": "project",
+      "path": "../AuthApi.Core/AuthApi.Core.csproj",
+      "msbuildProject": "../AuthApi.Core/AuthApi.Core.csproj"
+    },
+    "AuthApi.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../AuthApi.Infrastructure/AuthApi.Infrastructure.csproj",
+      "msbuildProject": "../AuthApi.Infrastructure/AuthApi.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "AuthApi.Application >= 1.0.0",
+      "AuthApi.Core >= 1.0.0",
+      "AuthApi.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.5"
     ]
   },
@@ -106,7 +161,17 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Alish\\AuthApi\\AuthApi.Application\\AuthApi.Application.csproj": {
+              "projectPath": "C:\\Users\\Alish\\AuthApi\\AuthApi.Application\\AuthApi.Application.csproj"
+            },
+            "C:\\Users\\Alish\\AuthApi\\AuthApi.Core\\AuthApi.Core.csproj": {
+              "projectPath": "C:\\Users\\Alish\\AuthApi\\AuthApi.Core\\AuthApi.Core.csproj"
+            },
+            "C:\\Users\\Alish\\AuthApi\\AuthApi.Infrastructure\\AuthApi.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Alish\\AuthApi\\AuthApi.Infrastructure\\AuthApi.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

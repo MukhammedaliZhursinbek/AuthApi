@@ -27,3 +27,9 @@ C:\Users\Alish\AuthApi\AuthApi.API\obj\Debug\net9.0\refint\AuthApi.API.dll
 C:\Users\Alish\AuthApi\AuthApi.API\obj\Debug\net9.0\AuthApi.API.pdb
 C:\Users\Alish\AuthApi\AuthApi.API\obj\Debug\net9.0\AuthApi.API.genruntimeconfig.cache
 C:\Users\Alish\AuthApi\AuthApi.API\obj\Debug\net9.0\ref\AuthApi.API.dll
+C:\Users\Alish\AuthApi\AuthApi.API\bin\Debug\net9.0\AuthApi.Application.dll
+C:\Users\Alish\AuthApi\AuthApi.API\bin\Debug\net9.0\AuthApi.Core.dll
+C:\Users\Alish\AuthApi\AuthApi.API\bin\Debug\net9.0\AuthApi.Infrastructure.dll
+C:\Users\Alish\AuthApi\AuthApi.API\bin\Debug\net9.0\AuthApi.Infrastructure.pdb
+C:\Users\Alish\AuthApi\AuthApi.API\bin\Debug\net9.0\AuthApi.Application.pdb
+C:\Users\Alish\AuthApi\AuthApi.API\bin\Debug\net9.0\AuthApi.Core.pdb
