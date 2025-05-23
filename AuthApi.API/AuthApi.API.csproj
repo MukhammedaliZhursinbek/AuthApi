@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AuthApi.Infrastructure\AuthApi.Infrastructure.csproj" />
+    <ProjectReference Include="..\AuthApi.Application\AuthApi.Application.csproj" />
+    <ProjectReference Include="..\AuthApi.Core\AuthApi.Core.csproj" />
+  </ItemGroup>
+
 </Project>
